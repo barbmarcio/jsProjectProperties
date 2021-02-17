@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/Immobile.js"></script>
+  <script src="js/Application.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Welcome to Immobile Shop</h1>
+  <form onsubmit="app.immobileCreate()">
+    <p>
+      <label>What is the type of the immobile</label><br>
+      <input type="radio" value="Apartment" id="apartment" name="immobile-type" checked>Apartment
+      <input type="radio" value="House" id="house" name="immobile-type">House
+    </p>
+    <p style="padding-top: 10px">
+      <label>Please inform the area</label><br>
+      <input type="text" name="immobile-area" autocomplete="off">
+    </p>
+    <p style="padding-top: 10px">
+      <label>Is the immobile rented?</label>
+      <input type="radio" id="isRented" name="immobile-isRented">Yes
+      <input type="radio" id="isNotRented" name="immobile-isRented" checked>No
+    </p>
+    <button type="sumit">Create a new immobile</button>
+  </form>
+
+  <ul id="createdImmobile"></ul>
+</body>
+</html>
